@@ -9,3 +9,4 @@
 | 5.  | Note-5   | Event delegation                                                                                           |
 | 6.  | Note-6   | Hoisting                                                                                                   |
 | 7.  | Note-7   | How JavaScript Code is executed                                                                            |
+| 8.  | Note-8   | undefined vs not defined                                                                                   |
