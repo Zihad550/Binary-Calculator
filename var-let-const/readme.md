@@ -1,5 +1,11 @@
 # Var, Let and Const
 
+**Index**
+
+- Scope
+- hoisting
+- pvt variable
+
 - var
 
   - var is functional scope
@@ -13,3 +19,8 @@
 - const
   - const is block scope
   - cannot update the value
+
+## Questions
+
+1. What is a Temporal Dead Zone?
+   = The time gap between variable declaration and getting the variable scope is called the temporal Dead Zone.
