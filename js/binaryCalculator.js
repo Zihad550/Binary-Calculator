@@ -1,3 +1,4 @@
+// all available buttons
 const btns = [
     {value: 0, id: 'btn0'},
     {value: 1, id: 'btn1'},
@@ -9,6 +10,7 @@ const btns = [
     {value: '/', id: 'btnDiv'}
 ];
 
+// button container
 const btnsContainer = document.getElementById('btns');
 btns.forEach(btn => {
     const button = document.createElement('button');
@@ -17,9 +19,9 @@ btns.forEach(btn => {
     btnsContainer.appendChild(button)
 });
 
-
+// result screen
 const res = document.getElementById('res');
-const buttons = document.querySelectorAll('button');
+// operands (0 and 1)
 const btn0 = document.getElementById('btn0');
 const btn1 = document.getElementById('btn1');
 const operands = [btn0, btn1];
@@ -31,7 +33,7 @@ operands.forEach(operand => {
 });
 
 
-// operators
+// operators (+, -, *, /)
 const btnSum = document.getElementById('btnSum');
 const btnSub = document.getElementById('btnSub');
 const btnMul = document.getElementById('btnMul');
@@ -43,12 +45,13 @@ const operators = [btnSum, btnSub, btnMul, btnDiv];
             })
     })
 
-// specials
+// Clear button ()
 const btnClr = document.getElementById('btnClr');
 btnClr.addEventListener('click', () => {
     res.innerHTML = '';
 })
 
+// equal button (=)
 const btnEql = document.getElementById('btnEql');
 btnEql.addEventListener('click', () => {
     let values = res.innerHTML;
